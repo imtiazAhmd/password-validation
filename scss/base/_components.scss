@@ -33,3 +33,12 @@
     cursor: pointer; // This is to change the cursor to a pointer when hovered
   }
 }
+
+// Password rules container
+// -------------------------
+ul {
+  &#passwordRules {
+    padding: 0; // This is to remove the default padding
+    list-style: none; // This is to remove the default list style
+  }
+}

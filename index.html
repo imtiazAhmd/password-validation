@@ -16,6 +16,23 @@
         <input type="password" id="passwordField" placeholder="Enter Password">
         <i id="reveal-icon" class="bi bi-eye-fill"></i>
       </div>
+      <div>
+        <ul id="passwordRules">
+          <li id="lengthRule">
+            <span>
+              <!-- <i class="bi bi-x"></i> <i class="bi bi-check"></i> -->
+            </span>
+            Password must be at least 8 characters long</li>
+          <li id="lowercaseRule">
+            <span></span>Password must contain at least 1 lowercase letter</li>
+          <li id="uppercaseRule">
+            <span></span>Password must contain at least 1 uppercase letter</li>
+          <li id="numberRule">
+            <span></span>Password must contain at least 1 number</li>
+          <li id="specialRule">
+            <span></span>Password must contain an underscore</li>
+        </ul>
+      </div>
     </section>
     <script type="module" src="assets/js/index.js"></script>
   </body>
