@@ -2,3 +2,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 * {
   font-family: "Roboto", sans-serif; }
+
+.password-container {
+  position: relative;
+  width: 25rem; }
+  .password-container input[type="password"],
+  .password-container input[type="text"] {
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 0.75rem 2.25rem 0.75rem 0.75rem;
+    box-sizing: border-box;
+    border: 0.125rem solid #0b0c0c;
+    box-shadow: 0.3125rem 0.3125rem 0px 0px #0b0c0c; }
+    .password-container input[type="password"]:focus,
+    .password-container input[type="text"]:focus {
+      outline: none;
+      border: 0.125rem solid #0b0c0c;
+      box-shadow: 0.3125rem 0.3125rem 0px 0px #0b0c0c; }
+
+#reveal-icon {
+  position: absolute;
+  top: 25%;
+  font-size: 1.25rem;
+  right: 0.75rem;
+  color: #b1b4b6; }
+  #reveal-icon:hover {
+    color: #1d70b8;
+    cursor: pointer; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; }
+
+.container {
+  width: 37.5rem;
+  padding: 1.25rem; }

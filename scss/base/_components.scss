@@ -1,0 +1,35 @@
+// Password component
+// -------------------------
+
+.password-container {
+  // This is the container of the input
+  position: relative; // This is to position the reveal icon
+  width: 25rem; // This is the width of the input
+  input[type="password"],
+  input[type="text"] {
+    font-size: 1.25rem; // This is the font size of the input
+    width: 100%; // This is the width of the input
+    padding: 0.75rem 2.25rem 0.75rem 0.75rem; // This is the padding of the input
+    box-sizing: border-box; // This is to include the border and padding in the width
+    border: 0.125rem solid $colour-black; // This is the border of the input
+    box-shadow: 0.3125rem 0.3125rem 0px 0px $colour-black; // This is the shadow that appears when the input is focused
+    &:focus {
+      outline: none; // This is to remove the default focus state
+      border: 0.125rem solid $colour-black; // This is the border that appears when the input is focused
+      box-shadow: 0.3125rem 0.3125rem 0px 0px $colour-black; // This is the shadow that appears when the input is focused
+    }
+  }
+}
+
+#reveal-icon {
+  position: absolute; // This is to position the reveal icon
+  top: 25%; // This is to vertically center the reveal icon
+  font-size: 1.25rem; // This is the font size of the reveal icon
+  right: 0.75rem; // This is the right padding of the input
+  color: $colour-light-grey; // This is the colour of the reveal icon
+  &:hover {
+    // This is the hover state of the reveal icon
+    color: $colour-blue; // This is the colour of the reveal icon when hovered
+    cursor: pointer; // This is to change the cursor to a pointer when hovered
+  }
+}
