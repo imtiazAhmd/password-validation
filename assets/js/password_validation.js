@@ -8,3 +8,13 @@ export function revealPassword() {
   // If it's not "password" (which means it's "text"), change it back to "password". This will hide the password characters.
   passwordField.type = passwordField.type === "password" ? "text" : "password";
 }
+
+// This function is used to validate the password.
+export function validatePassword(password) {
+  const hasValidLength = password.length >= 8;
+  const hasCapitalLetter = /[A-Z]/.test(password);
+  const hasLowerCaseLetter = /[a-z]/.test(password);
+  const hasNumber = /\d/.test(password);
+  const hasUnderscore = /_/.test(password);
+  return { hasValidLength, hasCapitalLetter, hasLowerCaseLetter, hasNumber, hasUnderscore };
+}
