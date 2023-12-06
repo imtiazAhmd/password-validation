@@ -31,6 +31,9 @@
     cursor: pointer; }
 
 ul#passwordRules {
+  position: absolute;
+  top: 100%;
+  left: 1rem;
   padding: 0;
   list-style: none; }
 

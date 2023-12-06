@@ -38,6 +38,9 @@
 // -------------------------
 ul {
   &#passwordRules {
+    position: absolute; // This is to position the password rules container
+    top: 100%; // This is to position the password rules container below the input
+    left: 1rem; // This is to position the password rules container to the left of the input
     padding: 0; // This is to remove the default padding
     list-style: none; // This is to remove the default list style
   }
