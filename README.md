@@ -50,6 +50,26 @@ npm run dev
 
 This will start the `node-sass` to watch `scss/main.scss` file and compile it to `assets/css/style.css` whenever it changes. It will also start `live-server` to serve the project on a local server.
 
+## Running tests
+
+### Accessibility test
+
+To check if there is any accessibility issues based on WCAG 2.2 AA, run the following:
+
+```bash
+npm run accessibility-test
+```
+
+> Note: Make sure server is running and port number is 8080, if >port number is different, you need to update the script in the >package.json
+
+### Unit test
+
+To run the unit tests, run the following:
+
+```bash
+npm run unit-test
+```
+
 ### Additional docs
 
 Additional documentations can be found within the `docs` folder.
