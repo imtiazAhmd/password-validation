@@ -2,7 +2,7 @@
   "name": "password-validation",
   "version": "1.0.0",
   "description": "The password will be provided by the user (as an argument of the method) and should return if the password is valid or not.",
-  "main": "assets/index.js",
+  "main": "index.js",
   "type": "module",
   "repository": "https://github.com/imtiazAhmd/password-validation.git",
   "author": "Imtiaz Ahmed",
@@ -10,12 +10,15 @@
   "scripts": {
     "build-css": "node-sass --watch scss/main.scss assets/css/style.css",
     "server": "npx live-server",
-    "dev": "npm run build-css & npm run server"
+    "dev": "npm run build-css & npm run server",
+    "unit-test": "jest",
+    "server-fix": "dos2unix ./node_modules/live-server/live-server.js"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0"
-  },
-  "dependencies": {
-    "live-server": "^1.2.2"
   }
 }
