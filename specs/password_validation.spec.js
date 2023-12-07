@@ -26,8 +26,6 @@ describe('revealPassword', () => {
 
   it('revealPassword toggles password field type', () => {
     const passwordField = document.getElementById('passwordField');
-
-    console.log(passwordField);
     // Initial type should be 'password'
     expect(passwordField.type).toBe('password');
 

@@ -12,13 +12,16 @@
     "server": "npx live-server",
     "dev": "npm run build-css & npm run server",
     "unit-test": "jest",
+    "accessibility-test": "pa11y --runner axe --runner htmlcs http://localhost:8080",
     "server-fix": "dos2unix ./node_modules/live-server/live-server.js"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "axe-core": "^4.8.2",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "live-server": "^1.2.2",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "pa11y": "^6.2.3"
   }
 }
