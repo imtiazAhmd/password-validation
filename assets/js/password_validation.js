@@ -118,7 +118,9 @@ function checkPasswordLengthAndUpdateDisplayToTogglePasswordRule(passwordField) 
 function updatePasswordRulesIcon(validationResults) {
   for (const [validation, result] of Object.entries(validationResults)) {
     const li = document.getElementById(validationToLiIdMap[validation]);
-    li.querySelector('span').innerHTML = result ? checkMark : xMark;
+    const span = li.querySelector('span');
+    span.innerHTML = result ? checkMark : xMark;
+    span.style.color = result ? 'green' : 'red';
   }
 }
 /**
