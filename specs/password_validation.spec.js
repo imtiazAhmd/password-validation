@@ -50,6 +50,26 @@ describe('validatePassword', () => {
     });
   });
 
+  it('returns false for passwords more than 8 characters', () => {
+    expect(validatePassword('LongPassword1')).toEqual({
+      hasCapitalLetter: true,
+      hasLowerCaseLetter: true,
+      hasNumber: true,
+      hasUnderscore: false,
+      hasValidLength: true
+    });
+  });
+
+  it('returns false for passwords equal to 8 characters', () => {
+    expect(validatePassword('Exact123')).toEqual({
+      hasCapitalLetter: true,
+      hasLowerCaseLetter: true,
+      hasNumber: true,
+      hasUnderscore: false,
+      hasValidLength: true
+    });
+  });
+
   it('returns false for passwords without an uppercase letter', () => {
     expect(validatePassword('lowercase1')).toEqual({
       hasCapitalLetter: false,
